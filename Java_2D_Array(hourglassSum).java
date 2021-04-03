@@ -18,8 +18,8 @@ public class Solution
         //calculating the columns of the row..
         int columns = arr[0].length;
         
-        int max_hourglass_sum = Integer.MIN_VALUE;//storing the mimimum value..
-        
+        //int max_hourglass_sum = Integer.MIN_VALUE;//storing the mimimum value..
+        int max_hourglass_sum = -63; //It is because the smallest value can be -9..and the max sum(hourglass) can be (-9*7=-63)..Hence it is better to use this...
         for(int i=0;i<rows-2;i++)//here we are subtracting 2 bcoz of array exception.
         {
             for(int j=0;j<columns-2;j++)//same with this loop ...
