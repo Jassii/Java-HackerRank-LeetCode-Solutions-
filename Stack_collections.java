@@ -33,7 +33,7 @@ class Solution{
              }
              else if(ch==']') //closing brace
              {
-                if(stack.isEmpty() || stack.pop()!='[')
+                if(stack.isEmpty() || stack.pop()!='[')  //here we are actually poping the element from the stack..
                 {
                     return false;
                  }
