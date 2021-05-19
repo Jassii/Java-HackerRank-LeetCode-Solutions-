@@ -27,7 +27,7 @@ class Solution{
       }
       else
       {
-          return (rh+1); //+1 because of the root node..
+          return (rh+1); //+1 because of the root node.
       }
     }
     public static Node insert(Node root,int data){
