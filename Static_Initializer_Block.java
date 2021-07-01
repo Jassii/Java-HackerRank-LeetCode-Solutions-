@@ -24,7 +24,25 @@ private static boolean initializeClassVariable()
     }
     return true;
 }
-
+/////////////////////////////////////Another way to do this..
+	static Scanner sc = new Scanner(System.in);
+	static int B = sc.nextInt();
+	static int H = sc.nextInt();
+	static boolean flag = false;
+	//just use static block declaration..
+static
+{
+	if(B<=0 || H<=0)
+	{
+		System.out.println("");
+		flag=false;
+	}
+	else
+	{
+		flag=true;
+	}
+}
+	
 public static void main(String[] args)
 {
 		if(flag)  //flag variable is accessed directly as it is static..no need to create an object..
@@ -36,4 +54,3 @@ public static void main(String[] args)
 	}//end of main
 
 }//end of class
-
